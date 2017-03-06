@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-com.mouniqa.testng.test.TestNgMavenExampleTest">
-              <span class="suite-name border-passed">com.mouniqa.testng.test.TestNgMavenExampleTest</span>
+              <span class="suite-name border-failed">com.mouniqa.testng.test.TestNgMavenExampleTest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,7 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-com.mouniqa.testng.test.TestNgMavenExampleTest" class="hide-methods failed suite-com.mouniqa.testng.test.TestNgMavenExampleTest"> (hide)</a> <!-- hide-methods failed suite-com.mouniqa.testng.test.TestNgMavenExampleTest -->
+                      <a href="#" panel-name="suite-com.mouniqa.testng.test.TestNgMavenExampleTest" class="show-methods failed suite-com.mouniqa.testng.test.TestNgMavenExampleTest"> (show)</a> <!-- show-methods failed suite-com.mouniqa.testng.test.TestNgMavenExampleTest -->
+                    </span>
+                    <div class="method-list-content failed suite-com.mouniqa.testng.test.TestNgMavenExampleTest">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.mouniqa.testng.test.TestNgMavenExampleTest" title="com.mouniqa.testng.test.TestNgMavenExampleTest" hash-for-method="callLogin">callLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-com.mouniqa.testng.test.TestNgMavenExampleTest -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -99,11 +113,6 @@
                       <a href="#" panel-name="suite-com.mouniqa.testng.test.TestNgMavenExampleTest" class="show-methods passed suite-com.mouniqa.testng.test.TestNgMavenExampleTest"> (show)</a> <!-- show-methods passed suite-com.mouniqa.testng.test.TestNgMavenExampleTest -->
                     </span>
                     <div class="method-list-content passed suite-com.mouniqa.testng.test.TestNgMavenExampleTest">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-com.mouniqa.testng.test.TestNgMavenExampleTest" title="com.mouniqa.testng.test.TestNgMavenExampleTest" hash-for-method="callLogin">callLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-com.mouniqa.testng.test.TestNgMavenExampleTest" title="com.mouniqa.testng.test.TestNgMavenExampleTest" hash-for-method="exampleOfTestNgMaven">exampleOfTestNgMaven</a> <!-- method navigator-link -->
@@ -121,9 +130,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-com.mouniqa.testng.test.TestNgMavenExampleTest" class="panel com.mouniqa.testng.test.TestNgMavenExampleTest">
-          <div class="suite-com.mouniqa.testng.test.TestNgMavenExampleTest-class-passed">
+          <div class="suite-com.mouniqa.testng.test.TestNgMavenExampleTest-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.mouniqa.testng.test.TestNgMavenExampleTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -132,8 +141,32 @@
                   <a name="callLogin">
                   </a> <!-- callLogin -->
                   <span class="method-name">callLogin</span>
+                  <div class="stack-trace">java.lang.UnsupportedClassVersionError: org/openqa/selenium/WebDriver : Unsupported major.minor version 51.0
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClassCond(ClassLoader.java:631)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:615)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:141)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:283)
+	at java.net.URLClassLoader.access$000(URLClassLoader.java:58)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at com.mouniqa.testng.test.TestNgMavenExampleTest.callLogin(TestNgMavenExampleTest.java:19)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-com.mouniqa.testng.test.TestNgMavenExampleTest-class-failed -->
+          <div class="suite-com.mouniqa.testng.test.TestNgMavenExampleTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mouniqa.testng.test.TestNgMavenExampleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="exampleOfTestNgMaven">
@@ -198,16 +231,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'callLogin')
 data.setCell(0, 2, 'com.mouniqa.testng.test.TestNgMavenExampleTest')
-data.setCell(0, 3, 18510);
+data.setCell(0, 3, 7);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'exampleOfTestNgMaven')
 data.setCell(1, 2, 'com.mouniqa.testng.test.TestNgMavenExampleTest')
-data.setCell(1, 3, 0);
+data.setCell(1, 3, 1);
 window.suiteTableData['com.mouniqa.testng.test.TestNgMavenExampleTest']= { tableData: data, tableDiv: 'times-div-com.mouniqa.testng.test.TestNgMavenExampleTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <span class="suite-total-time">Total running time: 8 ms</span>
               <div id="times-div-com.mouniqa.testng.test.TestNgMavenExampleTest">
               </div> <!-- times-div-com.mouniqa.testng.test.TestNgMavenExampleTest -->
             </div> <!-- times-div -->
@@ -235,12 +268,14 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.mouniqa.testng.test.TestNgMavenExampleTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">callLogin</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">exampleOfTestNgMaven</span>
-                <span class="method-start">18511 ms</span>
+                <span class="method-start">9 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
