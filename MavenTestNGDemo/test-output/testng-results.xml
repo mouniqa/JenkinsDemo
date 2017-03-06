@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="0" passed="0">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7" started-at="2017-03-06T12:16:10Z" finished-at="2017-03-06T12:16:10Z">
+  <suite name="Default suite" duration-ms="35" started-at="2017-03-06T14:57:06Z" finished-at="2017-03-06T14:57:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7" started-at="2017-03-06T12:16:10Z" finished-at="2017-03-06T12:16:10Z">
+    <test name="Default test" duration-ms="35" started-at="2017-03-06T14:57:06Z" finished-at="2017-03-06T14:57:06Z">
+      <class name="com.mouniqa.testng.test.TestNgMavenExampleTest">
+        <test-method status="PASS" signature="aaexampleOfTestNgMaven2()[pri:0, instance:com.mouniqa.testng.test.TestNgMavenExampleTest@2c9f9fb0]" name="aaexampleOfTestNgMaven2" duration-ms="11" started-at="2017-03-06T20:27:06Z" finished-at="2017-03-06T20:27:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aaexampleOfTestNgMaven2 -->
+        <test-method status="PASS" signature="exampleOfTestNgMaven()[pri:0, instance:com.mouniqa.testng.test.TestNgMavenExampleTest@2c9f9fb0]" name="exampleOfTestNgMaven" duration-ms="1" started-at="2017-03-06T20:27:06Z" finished-at="2017-03-06T20:27:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exampleOfTestNgMaven -->
+        <test-method status="PASS" signature="exampleOfTestNgMaven3()[pri:0, instance:com.mouniqa.testng.test.TestNgMavenExampleTest@2c9f9fb0]" name="exampleOfTestNgMaven3" duration-ms="1" started-at="2017-03-06T20:27:06Z" finished-at="2017-03-06T20:27:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exampleOfTestNgMaven3 -->
+        <test-method status="PASS" signature="exampleOfTestNgMaven4()[pri:0, instance:com.mouniqa.testng.test.TestNgMavenExampleTest@2c9f9fb0]" name="exampleOfTestNgMaven4" duration-ms="1" started-at="2017-03-06T20:27:06Z" finished-at="2017-03-06T20:27:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exampleOfTestNgMaven4 -->
+      </class> <!-- com.mouniqa.testng.test.TestNgMavenExampleTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

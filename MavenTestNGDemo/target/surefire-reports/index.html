@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -99,6 +99,11 @@
                       <a href="#" panel-name="suite-com.mouniqa.testng.test.TestNgMavenExampleTest" class="show-methods passed suite-com.mouniqa.testng.test.TestNgMavenExampleTest"> (show)</a> <!-- show-methods passed suite-com.mouniqa.testng.test.TestNgMavenExampleTest -->
                     </span>
                     <div class="method-list-content passed suite-com.mouniqa.testng.test.TestNgMavenExampleTest">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.mouniqa.testng.test.TestNgMavenExampleTest" title="com.mouniqa.testng.test.TestNgMavenExampleTest" hash-for-method="callLogin">callLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-com.mouniqa.testng.test.TestNgMavenExampleTest" title="com.mouniqa.testng.test.TestNgMavenExampleTest" hash-for-method="exampleOfTestNgMaven">exampleOfTestNgMaven</a> <!-- method navigator-link -->
@@ -122,6 +127,13 @@
               <span class="class-name">com.mouniqa.testng.test.TestNgMavenExampleTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="callLogin">
+                  </a> <!-- callLogin -->
+                  <span class="method-name">callLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="exampleOfTestNgMaven">
@@ -182,16 +194,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'exampleOfTestNgMaven')
+data.setCell(0, 1, 'callLogin')
 data.setCell(0, 2, 'com.mouniqa.testng.test.TestNgMavenExampleTest')
-data.setCell(0, 3, 8);
+data.setCell(0, 3, 18510);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'exampleOfTestNgMaven')
+data.setCell(1, 2, 'com.mouniqa.testng.test.TestNgMavenExampleTest')
+data.setCell(1, 3, 0);
 window.suiteTableData['com.mouniqa.testng.test.TestNgMavenExampleTest']= { tableData: data, tableDiv: 'times-div-com.mouniqa.testng.test.TestNgMavenExampleTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 ms</span>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
               <div id="times-div-com.mouniqa.testng.test.TestNgMavenExampleTest">
               </div> <!-- times-div-com.mouniqa.testng.test.TestNgMavenExampleTest -->
             </div> <!-- times-div -->
@@ -219,8 +235,12 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.mouniqa.testng.test.TestNgMavenExampleTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">exampleOfTestNgMaven</span>
+                <span class="method-name">callLogin</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">exampleOfTestNgMaven</span>
+                <span class="method-start">18511 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
