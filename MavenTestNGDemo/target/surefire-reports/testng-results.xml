@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="com.mouniqa.testng.test.TestNgMavenExampleTest" duration-ms="19" started-at="2017-03-06T16:53:23Z" finished-at="2017-03-06T16:53:23Z">
+  <suite name="Surefire suite" duration-ms="25" started-at="2017-03-06T17:14:21Z" finished-at="2017-03-06T17:14:21Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="19" started-at="2017-03-06T16:53:23Z" finished-at="2017-03-06T16:53:23Z">
+    <test name="Surefire test" duration-ms="25" started-at="2017-03-06T17:14:21Z" finished-at="2017-03-06T17:14:21Z">
       <class name="com.mouniqa.testng.test.TestNgMavenExampleTest">
-        <test-method status="FAIL" signature="callLogin()[pri:0, instance:com.mouniqa.testng.test.TestNgMavenExampleTest@21f8c6df]" name="callLogin" duration-ms="7" started-at="2017-03-06T22:23:23Z" finished-at="2017-03-06T22:23:23Z">
+        <test-method status="FAIL" signature="callLogin()[pri:0, instance:com.mouniqa.testng.test.TestNgMavenExampleTest@1b016632]" name="callLogin" duration-ms="8" started-at="2017-03-06T22:44:21Z" finished-at="2017-03-06T22:44:21Z">
           <exception class="java.lang.UnsupportedClassVersionError">
             <message>
               <![CDATA[org/openqa/selenium/WebDriver : Unsupported major.minor version 51.0]]>
@@ -48,29 +48,24 @@
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
 	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:109)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:597)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
-	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
-	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.UnsupportedClassVersionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- callLogin -->
-        <test-method status="PASS" signature="exampleOfTestNgMaven()[pri:0, instance:com.mouniqa.testng.test.TestNgMavenExampleTest@21f8c6df]" name="exampleOfTestNgMaven" duration-ms="1" started-at="2017-03-06T22:23:23Z" finished-at="2017-03-06T22:23:23Z">
+        <test-method status="PASS" signature="exampleOfTestNgMaven()[pri:0, instance:com.mouniqa.testng.test.TestNgMavenExampleTest@1b016632]" name="exampleOfTestNgMaven" duration-ms="0" started-at="2017-03-06T22:44:21Z" finished-at="2017-03-06T22:44:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exampleOfTestNgMaven -->
       </class> <!-- com.mouniqa.testng.test.TestNgMavenExampleTest -->
-    </test> <!-- Command line test -->
-  </suite> <!-- com.mouniqa.testng.test.TestNgMavenExampleTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>
